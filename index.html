@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+    <!-- Note the usage of `type=module` here as this is an ES6 module -->
+    <script type="module">
+      import init, { test_rand1016 } from './pkg/rand1016.js';
+      async function run() {
+        await init();
+        const result = test_rand1016();
+        console.log(`result = ${result}`);
+      }
+      run();
+    </script>
+  </body>
+</html>
